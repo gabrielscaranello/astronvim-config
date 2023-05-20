@@ -6,4 +6,6 @@ return {
 
   { import = "astrocommunity.colorscheme.tokyonight" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+  { import = "astrocommunity.test.nvim-coverage" },
+  { import = "astrocommunity.completion.codeium.vim" },
 }
