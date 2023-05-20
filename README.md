@@ -3,7 +3,15 @@
 This is my personal AstroNvim config 🫣  
 Suggestions for improvements will be appreciated. Make florks at will...
 
+##### Preview
+
+![](./preview.png)
+
 ## Important informations
+
+### Requirements
+
+It's the same requirements as [AstroNvim](https://astronvim.com/#-requirements).
 
 ### Auto completation with AI
 
