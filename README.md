@@ -11,6 +11,13 @@ This config uses Codeium to autocomplete your code. You will need a Codeium acco
 
 For more information about that see the [Exafunction/codeium.vim](https://github.com/Exafunction/codeium.vim) plugin documentation.
 
+To disable the feature comment out or remove this line in the `plugins/community.lua` file:
+
+```lua
+-- Comment out our remove this line
+-- { import = "astrocommunity.completion.codeium.vim" }
+```
+
 ## Installing AstroNvim
 
 ##### Make a backup of your current nvim folder
