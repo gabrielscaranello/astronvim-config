@@ -23,7 +23,7 @@ To disable the feature comment out or remove this line in the `plugins/community
 
 ```lua
 -- Comment out our remove this line
--- { import = "astrocommunity.completion.codeium.vim" }
+-- { import = "astrocommunity.completion.codeium-vim" },
 ```
 
 ## Installing AstroNvim
@@ -53,7 +53,7 @@ git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 ##### Clone config
 
 ```bash
-https://github.com/gabrielscaranello/astronvim-config.git ~/.config/nvim/lua/user
+git clone --depth 1 https://github.com/gabrielscaranello/astronvim-config ~/.config/nvim/lua/user
 ```
 
 ##### Remove the `.git` folder (optional)

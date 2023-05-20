@@ -19,5 +19,4 @@ return {
       return opts
     end,
   },
-  { "codota/tabnine-nvim", build = "./dl_binaries.sh" },
 }
