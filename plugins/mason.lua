@@ -30,6 +30,7 @@ return {
         "checkmake",
         "commitlint",
         "dotenv_linter",
+        "editorconfig_checker",
         "eslint_d",
         "jsonlint",
         "prettierd",
