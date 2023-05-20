@@ -3,7 +3,15 @@
 This is my personal AstroNvim config 🫣  
 Suggestions for improvements will be appreciated. Make florks at will...
 
-## Install AstroNvim
+## Important informations
+
+### Auto completation with AI
+
+This config uses Codeium to autocomplete your code. You will need a Codeium account and api key to do this.
+
+For more information about that see the [Exafunction/codeium.vim](https://github.com/Exafunction/codeium.vim) plugin documentation.
+
+## Installing AstroNvim
 
 ##### Make a backup of your current nvim folder
 
