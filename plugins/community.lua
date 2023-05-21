@@ -9,4 +9,21 @@ return {
   { import = "astrocommunity.completion.codeium-vim" },
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.indent.mini-indentscope" },
+
+  {
+    "folke/tokyonight.nvim",
+    config = function()
+      require("tokyonight").setup {
+        style = "night",
+        terminal_colors = true,
+        transparent = true,
+        dim_inactive = true,
+        lualine_bold = true,
+        styles = {
+          sidebars = "transparent",
+          floats = "dark",
+        },
+      }
+    end,
+  },
 }

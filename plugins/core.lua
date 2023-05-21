@@ -69,4 +69,12 @@ return {
       return opts
     end,
   },
+
+  {
+    "rcarriga/nvim-notify",
+    opts = function(_, opts)
+      opts.background_colour = "#000000"
+      return opts
+    end,
+  },
 }
