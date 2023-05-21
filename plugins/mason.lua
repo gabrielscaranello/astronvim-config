@@ -38,6 +38,14 @@ return {
         "stylelint",
         "stylua",
       })
+
+      opts.handlers = {
+        editorconfig_checker = function()
+          require("null-ls").register(require("null-ls").builtins.diagnostics.editorconfig_checker.with {
+            condition = function(utils) return utils.root_has_file { ".editorconfig" } end,
+          })
+        end,
+      }
     end,
   },
   {
