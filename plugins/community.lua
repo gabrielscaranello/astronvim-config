@@ -15,6 +15,7 @@ return {
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   { import = "astrocommunity.media.vim-wakatime" },
   { import = "astrocommunity.project.nvim-spectre" },
+  { import = "astrocommunity.syntax.vim-easy-align" },
   { import = "astrocommunity.utility.noice-nvim" },
 
   {
