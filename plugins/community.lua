@@ -13,6 +13,7 @@ return {
   { import = "astrocommunity.git.git-blame-nvim" },
   { import = "astrocommunity.indent.mini-indentscope" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+  { import = "astrocommunity.media.vim-wakatime" },
   { import = "astrocommunity.utility.noice-nvim" },
 
   {

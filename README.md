@@ -30,6 +30,18 @@ To disable the feature comment out or remove this line in the `plugins/community
 -- { import = "astrocommunity.completion.codeium-vim" },
 ```
 
+### Wakatime
+
+To use Wakatime needs to define Wakatime [API key](https://wakatime.com/settings#apikey) and to be installed [wakatime-cli](https://github.com/wakatime/wakatime-cli).  
+More information on [wakatime/vim-wakatime](https://github.com/wakatime/vim-wakatime).
+
+To disable the feature comment out or remove this line in the `plugins/community.lua` file:
+
+```lua
+-- Comment out our remove this line
+-- { import = "astrocommunity.media.vim-wakatime" },
+```
+
 ## Installing AstroNvim
 
 ##### Make a backup of your current nvim folder
