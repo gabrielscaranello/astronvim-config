@@ -60,4 +60,13 @@ return {
       return opts
     end,
   },
+
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    opts = function(_, opts)
+      opts.show_current_context = false
+
+      return opts
+    end,
+  },
 }
