@@ -5,10 +5,11 @@ return {
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
   { import = "astrocommunity.colorscheme.tokyonight" },
-  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   { import = "astrocommunity.completion.codeium-vim" },
-  { import = "astrocommunity.utility.noice-nvim" },
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.indent.mini-indentscope" },
+  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+  { import = "astrocommunity.utility.noice-nvim" },
 
   {
     "folke/tokyonight.nvim",
