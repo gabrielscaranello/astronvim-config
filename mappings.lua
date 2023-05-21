@@ -3,7 +3,10 @@
 -- Please use this mappings table to set keyboard mapping since this is the
 -- lower level configuration and more robust one. (which-key will
 -- automatically pick-up stored data by this setting.)
-return {
+
+local utils = require "astronvim.utils"
+
+local maps = {
   n = {
     ["d"] = { '"_d' },
   },
@@ -15,3 +18,9 @@ return {
     ["<C-s>"] = { "<Esc>:w!<cr>", desc = "Force write" },
   },
 }
+
+if vim.fn.executable "lazydocker" == 1 then
+  maps.n["<leader>td"] = { function() utils.toggle_term_cmd "lazydocker" end, desc = "ToggleTerm lazydocker" }
+end
+
+return maps

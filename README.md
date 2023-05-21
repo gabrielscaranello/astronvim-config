@@ -13,6 +13,10 @@ Suggestions for improvements will be appreciated. Make florks at will...
 
 It's the same requirements as [AstroNvim](https://astronvim.com/#-requirements).
 
+- [lazydocker](https://github.com/jesseduffield/lazydocker) docker ui toggle terminal (`leader + td`) (optional)
+
+---
+
 ### Auto completation with AI
 
 This config uses Codeium to autocomplete your code. You will need a Codeium account and api key to do this.
@@ -67,6 +71,15 @@ rm -rf ~/.config/nvim/lua/user/.git
 ```bash
 nvim
 ```
+
+## Mappings
+
+This configuration has all AstroNvim mappings, you can check them out [here](https://astronvim.com/Basic%20Usage/mappings).
+
+| Action                | Mappings      |
+| --------------------- | ------------- |
+| Save file             | `C-s`         |
+| ToggleTerm lazydocker | `leader + td` |
 
 ## Links
 
