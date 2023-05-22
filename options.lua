@@ -1,14 +1,14 @@
 -- set vim options here (vim.<first_key>.<second_key> = value)
 return {
   opt = {
-    -- set to true or false etc.
     relativenumber = true,                -- sets vim.opt.relativenumber
     number = true,                        -- sets vim.opt.number
     spell = false,                        -- sets vim.opt.spell
     signcolumn = "auto",                  -- sets vim.opt.signcolumn to auto
-    wrap = false,                         -- sets vim.opt.wrap
+    wrap = true,                          -- sets vim.opt.wrap
     guicursor = "n-v-c-i:ver100-iCursor", -- sets gui cursor,
-    cursorline = false,
+    cursorline = true,                    -- sets cursorline
+    clipboard = "unnamedplus",            -- sets clipboard
   },
   g = {
     mapleader = " ",                 -- sets vim.g.mapleader

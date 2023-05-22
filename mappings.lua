@@ -7,11 +7,13 @@
 local utils = require "astronvim.utils"
 
 local maps = {
-  n = {},
+  n = {
+    ["<C-a>"] = { "ggVG" },
+  },
   v = {},
   t = {},
   i = {
-    ["<C-s>"] = { "<Esc>:w!<cr>", desc = "Force write" },
+    ["<C-s>"] = { "<C-O>:w<CR>", desc = "Write file" },
   },
 }
 

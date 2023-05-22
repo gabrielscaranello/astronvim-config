@@ -7,7 +7,6 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.completion.codeium-vim" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
-  { import = "astrocommunity.editing-support.cutlass-nvim" },
   { import = "astrocommunity.editing-support.dial-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.git.git-blame-nvim" },
@@ -17,4 +16,12 @@ return {
   { import = "astrocommunity.project.nvim-spectre" },
   { import = "astrocommunity.syntax.vim-easy-align" },
   { import = "astrocommunity.utility.noice-nvim" },
+
+  {
+    "folke/noice.nvim",
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "rcarriga/nvim-notify",
+    },
+  },
 }
