@@ -55,7 +55,8 @@ return {
   {
     "nvim-neo-tree/neo-tree.nvim",
     opts = function(_, opts)
-      opts.window.width = 45
+      opts.window.width = 35
+      opts.window.position = "left"
 
       return opts
     end,

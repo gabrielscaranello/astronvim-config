@@ -4,7 +4,7 @@ return {
   -- example of imporing a plugin, comment out to use it or add your own
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
-  { import = "astrocommunity.colorscheme.tokyonight" },
+  { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.completion.codeium-vim" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.editing-support.cutlass-nvim" },
@@ -17,21 +17,4 @@ return {
   { import = "astrocommunity.project.nvim-spectre" },
   { import = "astrocommunity.syntax.vim-easy-align" },
   { import = "astrocommunity.utility.noice-nvim" },
-
-  {
-    "folke/tokyonight.nvim",
-    config = function()
-      require("tokyonight").setup {
-        style = "night",
-        terminal_colors = true,
-        transparent = true,
-        dim_inactive = true,
-        lualine_bold = true,
-        styles = {
-          sidebars = "transparent",
-          floats = "dark",
-        },
-      }
-    end,
-  },
 }
