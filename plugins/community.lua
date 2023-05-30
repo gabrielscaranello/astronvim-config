@@ -15,13 +15,49 @@ return {
   { import = "astrocommunity.media.vim-wakatime" },
   { import = "astrocommunity.project.nvim-spectre" },
   { import = "astrocommunity.syntax.vim-easy-align" },
+  { import = "astrocommunity.test.nvim-coverage" },
   { import = "astrocommunity.utility.noice-nvim" },
 
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 10000,
+    lazy = false,
+
+    opts = function(_, opts)
+      opts.integrations = {
+        neotree = true,
+      }
+
+      return opts
+    end,
+  },
+
+  {
+    "andythigpen/nvim-coverage",
+    opts = function(_, opts)
+      opts.commands = true
+
+      return opts
+    end,
+  },
   {
     "folke/noice.nvim",
     dependencies = {
       "MunifTanjim/nui.nvim",
       "rcarriga/nvim-notify",
     },
+
+    opts = function(_, opts)
+      opts.lsp = {
+        progress = { enabled = false },
+      }
+
+      opts.presets = {
+        command_palette = false,
+      }
+
+      return opts
+    end,
   },
 }

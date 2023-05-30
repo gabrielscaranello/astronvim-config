@@ -8,7 +8,9 @@ local utils = require "astronvim.utils"
 
 local maps = {
   n = {
-    ["<C-a>"] = { "ggVG" },
+    ["<C-a>"] = { "ggVG", desc = "Select all" },
+    [";"] = { ":", desc = "Call :" },
+    ["<leader><space>"] = { ":noh<cr>", desc = "No highlight" },
   },
   v = {},
   t = {},
