@@ -13,6 +13,7 @@ return {
   { import = "astrocommunity.indent.mini-indentscope" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   { import = "astrocommunity.media.vim-wakatime" },
+  { import = "astrocommunity.motion.mini-move" },
   { import = "astrocommunity.project.nvim-spectre" },
   { import = "astrocommunity.syntax.vim-easy-align" },
   { import = "astrocommunity.test.nvim-coverage" },
