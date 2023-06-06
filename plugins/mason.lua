@@ -10,7 +10,6 @@ return {
         "bashls",
         "docker_compose_language_service",
         "dockerls",
-        "emmet_ls",
         "html",
         "jsonls",
         "lua_ls",
