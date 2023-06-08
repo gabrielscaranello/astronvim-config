@@ -10,7 +10,7 @@ local maps = {
   n = {
     ["<C-a>"] = { "ggVG", desc = "Select all" },
     [";"] = { ":", desc = "Call :" },
-    ["<leader><space>"] = { ":noh<cr>", desc = "No highlight" },
+    ["<leader><space>"] = { "<cmd>noh<cr>", desc = "No highlight" },
     ["L"] = {
       function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
       desc = "Next buffer",
@@ -19,11 +19,12 @@ local maps = {
       function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
       desc = "Previous buffer",
     },
+    ["<leader>lk"] = { "<cmd>LspRestart<cr>", desc = "Restart LSP" },
   },
   v = {},
   t = {},
   i = {
-    ["<C-s>"] = { "<C-O>:w<CR>", desc = "Write file" },
+    ["<C-s>"] = { "<Esc><cmd>w<cr>", desc = "Write file" },
   },
 }
 
