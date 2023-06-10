@@ -104,4 +104,3 @@ This configuration has all AstroNvim mappings, you can check them out [here](htt
 
 - [AstroNvim](https://astronvim.com/)
 - [My dotfiles](https://github.com/gabrielscaranello/dotfiles)
-- [My Arch install guide](https://github.com/gabrielscaranello/arch)
