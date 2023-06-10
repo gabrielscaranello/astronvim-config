@@ -90,10 +90,15 @@ nvim
 
 This configuration has all AstroNvim mappings, you can check them out [here](https://astronvim.com/Basic%20Usage/mappings).
 
-| Action                | Mappings      |
-| --------------------- | ------------- |
-| Save file             | `C-s`         |
-| ToggleTerm lazydocker | `leader + td` |
+| Action                           | Mappings         |
+| -------------------------------- | ---------------- |
+| Save file                        | `Ctrl + s`       |
+| LSP Restart (if LSP is attached) | `Leader + lk`    |
+| No Highlight                     | `Leader + space` |
+| ToggleTerm lazydocker            | `Leader + td`    |
+| Next buffer                      | `Shift + l`      |
+| Previous buffer                  | `Shift + h`      |
+| Call : command                   | `;`              |
 
 ## Links
 
