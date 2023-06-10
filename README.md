@@ -5,7 +5,7 @@ Suggestions for improvements will be appreciated. Make florks at will...
 
 ##### Preview
 
-![](./preview.png)
+![](./assets/preview.png)
 
 > Using [kitty terminal](https://sw.kovidgoyal.net/kitty/) and [JetBrains Mono NF](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono/Ligatures).
 
