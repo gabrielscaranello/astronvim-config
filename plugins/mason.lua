@@ -3,10 +3,9 @@ return {
   -- use mason-lspconfig to configure LSP installations
   {
     "williamboman/mason-lspconfig.nvim",
-    -- overrides `require("mason-lspconfig").setup(...)`
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
-      opts.ensure_installed = require("astronvim.utils").list_insert_unique(opts.ensure_installed, {
+      opts.ensure_installed = {
         "bashls",
         "docker_compose_language_service",
         "dockerls",
@@ -16,7 +15,7 @@ return {
         "marksman",
         "tsserver",
         "volar",
-      })
+      }
     end,
   },
   -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
@@ -25,36 +24,47 @@ return {
     -- overrides `require("mason-null-ls").setup(...)`
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
-      opts.ensure_installed = require("astronvim.utils").list_insert_unique(opts.ensure_installed, {
+      opts.ensure_installed = {
         "beautysh",
         "checkmake",
-        "commitlint",
         "dotenv_linter",
         "editorconfig_checker",
         "eslint_d",
+        "jq",
         "jsonlint",
+        "markdownlint",
         "prettierd",
         "stylelint",
         "stylua",
-      })
-
-      opts.handlers = {
-        editorconfig_checker = function()
-          require("null-ls").register(require("null-ls").builtins.diagnostics.editorconfig_checker.with {
-            condition = function(utils) return utils.root_has_file { ".editorconfig" } end,
-          })
-        end,
       }
+
+      opts.handlers = nil
 
       return opts
     end,
   },
+
+  {
+    "jose-elias-alvarez/null-ls.nvim",
+    event = { "BufReadPre", "BufNewFile" },
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "mason.nvim",
+    },
+    config = function()
+      local null_ls = require "null-ls"
+      local opts = require "user.utils.null-ls"
+
+      null_ls.setup { sources = opts.sources, on_attach = opts.on_attach }
+    end,
+  },
+
   {
     "jay-babu/mason-nvim-dap.nvim",
     -- overrides `require("mason-nvim-dap").setup(...)`
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
-      opts.ensure_installed = require("astronvim.utils").list_insert_unique(opts.ensure_installed, {})
+      opts.ensure_installed = {}
     end,
   },
 }
