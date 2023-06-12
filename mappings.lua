@@ -19,8 +19,12 @@ local maps = {
       desc = "Previous buffer",
     },
     ["<leader>lk"] = { "<cmd>LspRestart<cr>", desc = "Restart LSP" },
+    ["d"] = { '"_d' },
   },
-  v = {},
+  v = {
+    ["p"] = { '"_dP' },
+    ["d"] = { '"_d' },
+  },
   t = {},
   i = {
     ["<C-s>"] = { "<Esc><cmd>w<cr>", desc = "Write file" },
