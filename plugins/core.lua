@@ -35,7 +35,7 @@ return {
 
       opts.statusline = {
         hl = { fg = "fg", bg = "bg" },
-        status.component.mode(),
+        status.component.mode { mode_text = { padding = { left = 1, right = 1 } } },
         status.component.git_branch(),
         status.component.git_diff(),
         status.component.fill(),
@@ -108,9 +108,9 @@ return {
 
       opts.sources = cmp.config.sources {
         { name = "nvim_lsp", priority = 1000 },
-        { name = "luasnip",  priority = 750 },
-        { name = "buffer",   priority = 500 },
-        { name = "path",     priority = 250 },
+        { name = "luasnip", priority = 750 },
+        { name = "buffer", priority = 500 },
+        { name = "path", priority = 250 },
       }
 
       return opts
