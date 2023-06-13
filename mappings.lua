@@ -20,10 +20,12 @@ local maps = {
     },
     ["<leader>lk"] = { "<cmd>LspRestart<cr>", desc = "Restart LSP" },
     ["d"] = { '"_d' },
+    ["c"] = { '"_c' },
   },
   v = {
     ["p"] = { '"_dP' },
     ["d"] = { '"_d' },
+    ["c"] = { '"_c' },
   },
   t = {},
   i = {
