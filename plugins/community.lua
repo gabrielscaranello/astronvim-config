@@ -9,6 +9,7 @@ return {
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.editing-support.dial-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
+  { import = "astrocommunity.editing-support.treesj" },
   { import = "astrocommunity.git.git-blame-nvim" },
   { import = "astrocommunity.indent.mini-indentscope" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
