@@ -1,3 +1,5 @@
+local utils = require "astronvim.utils"
+
 -- customize mason plugins
 return {
   -- use mason-lspconfig to configure LSP installations
@@ -42,6 +44,18 @@ return {
 
       return opts
     end,
+  },
+
+  {
+    "jose-elias-alvarez/typescript.nvim",
+    init = function() astronvim.lsp.skip_setup = utils.list_insert_unique(astronvim.lsp.skip_setup, "tsserver") end,
+    ft = {
+      "typescript",
+      "typescriptreact",
+      "javascript",
+      "javascriptreact",
+    },
+    opts = function() return { server = require("astronvim.utils.lsp").config "tsserver" } end,
   },
 
   {
