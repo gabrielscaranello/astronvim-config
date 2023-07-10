@@ -33,7 +33,6 @@ return {
     builtins.diagnostics.stylelint,
 
     builtins.code_actions.eslint_d,
-    require "typescript.extensions.null-ls.code-actions",
 
     builtins.formatting.beautysh,
     builtins.formatting.stylua,
