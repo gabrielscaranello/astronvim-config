@@ -54,50 +54,15 @@ return {
 
   {
     "nvim-neo-tree/neo-tree.nvim",
-    opts = function(_, opts)
-      local events = require "neo-tree.events"
-
-      local function on_file_remove(args)
-        local ts_clients = vim.lsp.get_active_clients { name = "tsserver" }
-        for _, ts_client in ipairs(ts_clients) do
-          ts_client.request("workspace/executeCommand", {
-            command = "_typescript.applyRenameFile",
-            arguments = {
-              {
-                sourceUri = vim.uri_from_fname(args.source),
-                targetUri = vim.uri_from_fname(args.destination),
-              },
-            },
-          })
-        end
-      end
-
-      opts.event_handlers = {
-        {
-          event = events.FILE_MOVED,
-          handler = on_file_remove,
-        },
-        {
-          event = events.FILE_RENAMED,
-          handler = on_file_remove,
-        },
-      }
-
-      opts.window.width = 35
-      opts.window.position = "left"
-
-      return opts
-    end,
+    opts = {
+      window = {
+        width = 35,
+        position = "left",
+      },
+    },
   },
 
-  {
-    "lukas-reineke/indent-blankline.nvim",
-    opts = function(_, opts)
-      opts.show_current_context = false
-
-      return opts
-    end,
-  },
+  { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 
   {
     "rcarriga/nvim-notify",
@@ -110,11 +75,9 @@ return {
 
   {
     "onsails/lspkind.nvim",
-    opts = function(_, opts)
-      -- use codicons preset
-      opts.preset = "codicons"
-      -- set some missing symbol types
-      opts.symbol_map = {
+    opts = {
+      preset = "codicons",
+      symbol_map = {
         Array = "",
         Boolean = "",
         Key = "",
@@ -124,9 +87,8 @@ return {
         Object = "",
         Package = "",
         String = "",
-      }
-      return opts
-    end,
+      },
+    },
   },
 
   {

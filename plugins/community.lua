@@ -8,6 +8,7 @@ return {
   { import = "astrocommunity.completion.codeium-vim" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.editing-support.dial-nvim" },
+  { import = "astrocommunity.editing-support.multicursors-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.editing-support.treesj" },
   { import = "astrocommunity.git.git-blame-nvim" },
@@ -22,28 +23,24 @@ return {
   { import = "astrocommunity.utility.noice-nvim" },
 
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    priority = 10000,
-    lazy = false,
-
-    opts = function(_, opts)
-      opts.integrations = {
-        neotree = true,
-      }
-
-      return opts
-    end,
+    "catppuccin",
+    opts = {
+      flavour = "mocha",
+      transparent_background = true,
+      integrations = {
+        neotree = false,
+        noice = true,
+        notifier = true,
+        native_lsp = { enable = true },
+      },
+    },
   },
 
   {
     "andythigpen/nvim-coverage",
-    opts = function(_, opts)
-      opts.commands = true
-
-      return opts
-    end,
+    opts = { commands = true },
   },
+
   {
     "folke/noice.nvim",
     dependencies = {
@@ -51,16 +48,9 @@ return {
       "rcarriga/nvim-notify",
     },
 
-    opts = function(_, opts)
-      opts.lsp = {
-        progress = { enabled = false },
-      }
-
-      opts.presets = {
-        command_palette = false,
-      }
-
-      return opts
-    end,
+    opts = {
+      lsp = { progress = { enabled = false } },
+      presets = { command_palette = false },
+    },
   },
 }

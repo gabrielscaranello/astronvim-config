@@ -1,11 +1,7 @@
 return {
-  {
-    "mg979/vim-visual-multi",
-    event = "User AstroFile",
-  },
-  {
-    "mawkler/modicator.nvim",
-    dependencies = { "catppuccin/nvim" },
-    event = "User AstroFile",
+  "antosha417/nvim-lsp-file-operations",
+  dependencies = {
+    "nvim-lua/plenary.nvim",
+    "nvim-neo-tree/neo-tree.nvim",
   },
 }
