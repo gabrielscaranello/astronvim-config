@@ -4,6 +4,7 @@ return {
   -- example of imporing a plugin, comment out to use it or add your own
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
+  { import = "astrocommunity.color.transparent-nvim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.completion.codeium-vim" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
@@ -26,12 +27,16 @@ return {
     "catppuccin",
     opts = {
       flavour = "mocha",
-      transparent_background = true,
+      transparent_background = false,
       integrations = {
-        neotree = false,
+        mason = true,
+        native_lsp = { enabled = true },
+        neotree = true,
         noice = true,
         notifier = true,
-        native_lsp = { enable = true },
+        treesitter = true,
+        telescope = { enabled = true },
+        which_key = false,
       },
     },
   },
