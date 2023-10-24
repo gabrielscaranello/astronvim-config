@@ -12,6 +12,8 @@ return {
   { import = "astrocommunity.editing-support.multicursors-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.editing-support.treesj" },
+  { import = "astrocommunity.editing-support.yanky-nvim" },
+  { import = "astrocommunity.file-explorer.oil-nvim" },
   { import = "astrocommunity.git.git-blame-nvim" },
   { import = "astrocommunity.indent.mini-indentscope" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
