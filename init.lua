@@ -18,14 +18,14 @@ return {
     },
 
     config = {
-      volar = function(opts)
-        opts.filetypes = { "typescript", "javascript", "vue", "json" }
-        return opts
-      end,
-      tsserver = function(opts)
-        opts.filetypes = { "javascriptreact", "javascript.jsx", "typescriptreact", "typescript.tsx" }
-        return opts
-      end,
+      -- volar = function(opts)
+      --   opts.filetypes = { "typescript", "javascript", "vue", "json" }
+      --   return opts
+      -- end,
+      -- tsserver = function(opts)
+      --   opts.filetypes = { "javascriptreact", "javascript.jsx", "typescriptreact", "typescript.tsx" }
+      --   return opts
+      -- end,
     },
   },
 
