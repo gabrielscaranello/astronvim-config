@@ -11,21 +11,31 @@ return {
   lsp = {
     -- customize lsp formatting options
     formatting = {
+      async = false,
+
+      filter = function(client)
+        if client.name == "jsonls" then return false end
+        if client.name == "tsserver" then return false end
+        if client.name == "volar" then return false end
+
+        return true
+      end,
       -- control auto formatting on save
       format_on_save = {
-        enabled = true, -- enable or disable format on save globally
+        enabled = true,
       },
     },
 
     config = {
-      -- volar = function(opts)
-      --   opts.filetypes = { "typescript", "javascript", "vue", "json" }
-      --   return opts
-      -- end,
-      -- tsserver = function(opts)
-      --   opts.filetypes = { "javascriptreact", "javascript.jsx", "typescriptreact", "typescript.tsx" }
-      --   return opts
-      -- end,
+      eslint = {
+        filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact", "vue" },
+      },
+      volar = {
+        filetypes = { "typescript", "javascript", "vue" },
+      },
+      tsserver = {
+        filetypes = { "javascriptreact", "javascript.jsx", "typescriptreact", "typescript.tsx" },
+      },
     },
   },
 
