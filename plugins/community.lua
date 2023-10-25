@@ -42,14 +42,16 @@ return {
       flavour = "mocha",
       transparent_background = false,
       integrations = {
+        cmp = true,
         mason = true,
         native_lsp = { enabled = true },
         neotree = true,
+        neotest = true,
         noice = true,
         notifier = true,
         treesitter = true,
         telescope = { enabled = true },
-        which_key = false,
+        which_key = true,
       },
     },
   },
@@ -67,7 +69,7 @@ return {
     },
 
     opts = {
-      lsp = { progress = { enabled = false } },
+      lsp = { progress = { enabled = true } },
       presets = { command_palette = false },
     },
   },

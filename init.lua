@@ -31,10 +31,17 @@ return {
         filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact", "vue" },
       },
       volar = {
-        filetypes = { "typescript", "javascript", "vue" },
+        filetypes = { "vue" },
       },
       tsserver = {
-        filetypes = { "javascriptreact", "javascript.jsx", "typescriptreact", "typescript.tsx" },
+        filetypes = {
+          "javascript",
+          "javascript.jsx",
+          "javascriptreact",
+          "typescript",
+          "typescript.tsx",
+          "typescriptreact",
+        },
       },
     },
   },
