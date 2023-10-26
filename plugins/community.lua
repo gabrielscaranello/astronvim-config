@@ -69,7 +69,7 @@ return {
     },
 
     opts = {
-      lsp = { progress = { enabled = true } },
+      lsp = { progress = { enabled = false } },
       presets = { command_palette = false },
     },
   },
