@@ -6,7 +6,6 @@ return {
   },
   {
     "andythigpen/nvim-coverage",
-
     keys = {
       {
         "<leader>lc",
