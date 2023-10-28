@@ -9,7 +9,6 @@ return {
         condition = function(utils) return utils.root_has_file { ".editorconfig" } end,
       },
       builtins.diagnostics.checkmake,
-      builtins.diagnostics.dotenv_linter,
 
       -- Set code actions
 
