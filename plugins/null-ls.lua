@@ -8,7 +8,6 @@ return {
       builtins.diagnostics.editorconfig_checker.with {
         condition = function(utils) return utils.root_has_file { ".editorconfig" } end,
       },
-      builtins.diagnostics.checkmake,
 
       -- Set code actions
 

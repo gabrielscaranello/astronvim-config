@@ -62,7 +62,7 @@ return {
     opts = {
       window = {
         width = 35,
-        position = "left",
+        position = "right",
       },
     },
   },
