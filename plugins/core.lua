@@ -61,8 +61,8 @@ return {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
       window = {
-        width = 35,
-        position = "right",
+        width = 40,
+        position = "left",
       },
     },
   },
