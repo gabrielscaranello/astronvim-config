@@ -19,6 +19,8 @@ local maps = {
       desc = "Previous buffer",
     },
     ["<leader>lk"] = { "<cmd>LspRestart<cr>", desc = "Restart LSP" },
+    ["<leader>gD"] = { "<cmd>DiffviewOpen<cr>", desc = "Open Diffview" },
+    ["<leader>gx"] = { "<cmd>DiffviewClose<cr>", desc = "Close Diffview" },
     ["d"] = { '"_d' },
     ["c"] = { '"_c' },
   },
