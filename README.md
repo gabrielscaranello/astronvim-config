@@ -109,6 +109,9 @@ This configuration has all AstroNvim mappings, you can check them out [here](htt
 | LSP Restart (if LSP is attached) | `Leader + lk`    |
 | No Highlight                     | `Leader + space` |
 | ToggleTerm lazydocker            | `Leader + td`    |
+| ToggleTerm lazygit               | `Leader + gg`    |
+| Open Diffview                    | `Leader + gD`    |
+| Close Diffview                   | `Leader + gx`    |
 | Next buffer                      | `Shift + l`      |
 | Previous buffer                  | `Shift + h`      |
 | Call : command                   | `;`              |
