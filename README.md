@@ -1,18 +1,13 @@
 # AstroNvim Config
 
-<!--toc:start-->
+> [!CAUTION]  
+> The configuration present in this repository was made to work with version 3.x of [AstroNvim](https://astronvim.com/).  
+> 
+> If you are using v4+ you must use [this configuration](https://github.com/gabrielscaranello/dotfiles/blob/main/config/nvim/README.md).  
+> For more information see the [AstroNvim v4 migration guide](https://docs.astronvim.com/configuration/v4_migration/).
 
-- [AstroNvim Config](#astronvim-config)
-  - [About](#about)
-  - [Requirements](#requirements)
-  - [Features](#features)
-    - [Auto completation with AI](#auto-completation-with-ai)
-    - [Wakatime](#wakatime)
-  - [Installing](#installing)
-  - [Mappings](#mappings)
-  - [Preview](#preview)
-  - [Links](#links)
-  <!--toc:end-->
+> [!WARNING]  
+> This repository is archived and should no longer be supported.
 
 ## About
 
